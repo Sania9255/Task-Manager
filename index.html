@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Flow Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+        <div class="glass-header">
+            <div class="header-top">
+                <h2>My Day</h2>
+                <button id="themeToggle">✨</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p id="statsText">0% Completed</p>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Add a task..." autocomplete="off">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <button class="clear-all" id="clearAll">Clear Completed</button>
+    </div>
+
+    <audio id="popSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
